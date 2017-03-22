@@ -15,7 +15,7 @@
       
       
       <script type="text/javascript">
-    
+    if ('speechSynthesis' in window) {
      var u = new SpeechSynthesisUtterance();
      u.text = '<p>Les employeurs, aussi bénéficient des clauses sociales, notre partenaire l’agefiph'+ 
                 'leur apporte des avantages financiers conséquents par le biais des unités bénéficiaires (Taxe Agefiph).</p>';
@@ -23,6 +23,7 @@
      u.rate = 1;
      u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
      speechSynthesis.speak(u);
+    }
     </script>
       
       
@@ -31,3 +32,6 @@
       
     </body>
 </html>
+
+
+
