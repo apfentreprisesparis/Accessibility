@@ -108,9 +108,14 @@ address{
     font-size: 2em;
 }
 
+.thumbnail {
+    
+}
+
 .caption {
     color: black;
-    font-size: 0.5em;
+    background-color: black;
+    font-size: 1em;
     font-weight: bold;
     
 }
