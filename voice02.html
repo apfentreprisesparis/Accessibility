@@ -26,66 +26,6 @@
    
    
    
-   var $buttons = document.createElement('p'),
-    $button = document.createElement('button'),
-    $play = $button.cloneNode(),
-    $pause = $button.cloneNode(),
-    paused = false,
-    to_speak;
-
-if ( 'speechSynthesis' in window ) {
-
-  // content to speak
-  to_speak = new SpeechSynthesisUtterance(
-    document.querySelector('main').textContent
-  );
-
-  // set the rate a little faster than 1x
-  to_speak.rate = 1.4;
-
-  // event handlers
-  to_speak.onpause = function(){
-    paused = true;
-  };
-
-  // button events
-  function play() {
-    if ( paused ) {
-      paused = false;
-      window.speechSynthesis.resume();
-    } else {
-      window.speechSynthesis.speak( to_speak );
-    }
-  }
-  function pause() {
-    window.speechSynthesis.pause();
-  }
-
-  // play button
-  $play.innerText = 'Play';
-  $play.addEventListener( 'click', play, false );
-  $buttons.appendChild( $play );
-  
-  // pause button
-  $pause.innerText = 'Pause';
-  $pause.addEventListener( 'click', pause, false );
-  $buttons.appendChild( $pause );
-
-} else {
-
-  // sad panda
-  $buttons.innerText = 'Unfortunately your browser doesn’t support this feature.';
-
-}
-
-document.body.appendChild( $buttons )
-   
-   
-   
-   
-   
-   
-   
     </script>
       
       
