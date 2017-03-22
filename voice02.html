@@ -1,6 +1,16 @@
 <script type="text/javascript">
     
-var msg = new SpeechSynthesisUtterance('Hello World');
-window.speechSynthesis.speak(msg);
+     var u = new SpeechSynthesisUtterance();
+     u.text = 'Bonjour André !';
+     u.lang = 'fr-FR';
+     u.rate = 1;
+     u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
+     speechSynthesis.speak(u);
+    
+    
+    
+    
+    
     
 </script>
+
