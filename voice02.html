@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <title>Demo Speech Synthesis</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script>
-      window.onload = function () {
-         var utterance = new SpeechSynthesisUtterance();
-         utterance.text = "Bonjour !";
-         utterance.lang = "fr-FR";
-         speechSynthesis.speak( utterance );
-      };
-   </script>
-</head>
-<body>
-
-</body>
-</html>
+  <script type="text/javascript">
+     speechSynthesis.speak(SpeechSynthesisUtterance('Hello World'));
+  </script>
