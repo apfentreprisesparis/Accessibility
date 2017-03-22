@@ -1,0 +1,115 @@
+body 
+    {
+    background-color: #000000;
+    border-color:#FFFFFF;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 8em;
+    font-weight: bold;
+}    
+
+h2 {
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+h3 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h4 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p { 
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    list-style: none;
+}
+
+ul:before {
+    font-size:2em;
+    vertical-align:middle;
+}
+
+li:before {
+    content:'\00b7';
+    font-size:2em;
+    vertical-align:middle;
+    
+}
+
+
+a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+     
+}
+li {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+em{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+strong{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+address{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.a{
+    color: red;
+    background-color: yellow;
+}
+
+.menu {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.sous_menu {
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.form-control {
+    height:  1em;
+    font-size: 2em;
+}
+
+input
+{
+  height:  3em;
+  
+}
