@@ -30,15 +30,84 @@
 
 </head>
 <body>
+<style>
 
+.carreNoir{
+	width:35px;
+	height:35px;
+	background:black;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+    text-align:center;
+    border: 1px solid white;
+}
 
-<div class="container-fluid">
+.carreBlanc{
+	width:35px;
+	height:35px;
+	background:white;
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+    text-align:center;
+}
+
+    .carreRouge{
+	width:35px;
+	height:35px;
+	background:red;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+    text-align:center;
+}
+
+.carreJaune{
+	width:35px;
+	height:35px;
+	background:yellow;
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+    text-align:center;
+}
+.carreBleu{
+	width:35px;
+	height:35px;
+	background:blue;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+    text-align:center;
+}
+</style>
+
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm-6"><a href="https://www.apfparis.fr/accueil"><img class="img-reponsive" id="menu" src="images/logoApfEntreprisesParis.png" alt="logo apfparis"></a></div>
+            <div class="col-sm-6">
+                <div class="row">
+                     <div class="col-xs-3">
+                        <a href="fnlb.html"><div class="carreNoir">A</div></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="fbln.html"><div class="carreBlanc">A</div></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="frlb.html"><div class="carreRouge">A</div></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="fjln.html"><div class="carreJaune">A</div></a>
+                    </div>
+                </div>
+        </div>
+    </div>
     
     
   
-<br>
-<a href="https://www.apfparis.fr/accueil"><img class="img-reponsive" id="menu" src="images/logoApfEntreprisesParis.png" alt="logo apfparis"></a>
-<br>
+
 <hr>
 
         <a href="#unite-beneficiaire" class="menu">UNITES BENEFICIAIRES</a><br>
@@ -392,6 +461,7 @@ un chiffre d’affaire de 75 millions d'euros, 4 000 personnes à votre service 
         </div>
     </div>    
 </body>
+
 
 <script>
 function AFFICHE(calcul){
